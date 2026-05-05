@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Структура Telegram-бота — MLM System</title>
+    <meta
+      name="description"
+      content="Наглядная структура Telegram-бота для автоворонки MLM System."
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="./dashboard.html">MLM System</a>
+        <nav class="topnav">
+          <a href="./dashboard.html">Дашборд</a>
+          <a href="#entry">Вход</a>
+          <a href="#branches">Ветки</a>
+          <a class="nav-cta" href="#followup">Дожим</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Telegram-бот</p>
+            <h1>Структура бота, куда мы ведем людей из автоворонки.</h1>
+            <p class="hero-text">
+              Это карта сценария: что человек видит на входе, как
+              сегментируется, по каким веткам идет дальше и где происходит
+              конверсия в партнерство, покупку или сопровождение.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#entry">Посмотреть вход</a>
+              <a class="button button-secondary" href="#branches">Открыть ветки</a>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="signal-card signal-card-dark">
+              <span class="signal-kicker">Задача бота</span>
+              <strong>Не просто выдать информацию, а довести до решения</strong>
+              <span>Бот подтверждает интерес, сегментирует, прогревает и переводит человека в нужный формат.</span>
+            </div>
+            <div class="signal-card">
+              <span class="signal-kicker">3 главные ветки</span>
+              <strong>Партнерство / Покупка / Сначала посмотреть</strong>
+              <span>Это снимает путаницу и сразу разводит аудиторию по разным сценариям.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="entry">
+          <div class="section-heading">
+            <p class="eyebrow">Точка входа</p>
+            <h2>Что происходит после клика по ссылке</h2>
+          </div>
+
+          <div class="product-map">
+            <article class="card map-core">
+              <span class="badge badge-solid">Вход</span>
+              <h3>Рилс → Профиль → Ссылка → Мини-лендинг → Telegram-бот</h3>
+              <p>В идеале бот открывается уже после короткого экрана, где человек понимает, что получит систему, а не просто “попадет в чат”.</p>
+            </article>
+
+            <div class="map-arrow">↓</div>
+
+            <article class="card map-wide">
+              <span class="badge">Стартовое сообщение бота</span>
+              <h3>Привет. Здесь ты можешь получить готовую систему для MLM через соцсети.</h3>
+              <p>Внутри: 100 тем для рилс, обучение созданию видео через нейросети и система прогрева и доведения до решения.</p>
+            </article>
+
+            <div class="map-arrow">↓</div>
+
+            <div class="map-row map-row-3">
+              <article class="card map-node">
+                <span class="badge">Кнопка 1</span>
+                <h3>Хочу как партнер</h3>
+                <p>Для тех, кто рассматривает вход в твою команду и получение системы внутри партнерской модели.</p>
+              </article>
+
+              <article class="card map-node featured-node">
+                <span class="badge badge-solid">Кнопка 2</span>
+                <h3>Хочу купить для своего бизнеса</h3>
+                <p>Для тех, кто не идет в команду, но хочет взять систему отдельно и внедрить в свой MLM-бизнес.</p>
+              </article>
+
+              <article class="card map-node">
+                <span class="badge">Кнопка 3</span>
+                <h3>Хочу сначала посмотреть, как это работает</h3>
+                <p>Для более холодной аудитории, которая пока не готова сразу выбрать формат.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section alt-section" id="branches">
+          <div class="section-heading">
+            <p class="eyebrow">Ветки бота</p>
+            <h2>Три основных сценария движения человека</h2>
+          </div>
+
+          <div class="reels-grid">
+            <article class="card reel-card">
+              <span class="reel-number">A</span>
+              <h3>Ветка “Хочу как партнер”</h3>
+              <p><strong>Смысл:</strong> показать, что система дается не как халява, а как инструмент старта и роста в партнерской модели.</p>
+              <p><strong>Сообщения:</strong> что входит в систему, зачем она нужна, почему это помогает не строить MLM вручную.</p>
+              <p><strong>Дальше:</strong> мини-квалификация и переход в заявку / разбор / личный диалог.</p>
+            </article>
+
+            <article class="card reel-card">
+              <span class="reel-number">B</span>
+              <h3>Ветка “Хочу купить для своего бизнеса”</h3>
+              <p><strong>Смысл:</strong> продать самостоятельную систему как отдельный продукт без входа в команду.</p>
+              <p><strong>Сообщения:</strong> что входит, почему это не просто бот, а целая модель: контент, нейровидео, прогрев и путь клиента.</p>
+              <p><strong>Дальше:</strong> показать состав, цену 39 000 ₽, рассрочку и перевести в заявку / оплату / вопрос.</p>
+            </article>
+
+            <article class="card reel-card">
+              <span class="reel-number">C</span>
+              <h3>Ветка “Хочу сначала посмотреть”</h3>
+              <p><strong>Смысл:</strong> мягко прогреть холодного человека, не заставляя его сразу принимать решение.</p>
+              <p><strong>Сообщения:</strong> объяснить проблему, показать весь путь системы и только потом предложить выбрать формат.</p>
+              <p><strong>Дальше:</strong> вернуть человека в одну из двух основных веток: партнерство или покупка.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="partner-flow">
+          <div class="section-heading">
+            <p class="eyebrow">Партнерская ветка</p>
+            <h2>Как выглядит путь внутри сценария “Хочу как партнер”</h2>
+          </div>
+
+          <div class="product-map">
+            <article class="card map-wide">
+              <span class="badge">Сообщение 1</span>
+              <h3>Если ты хочешь строить бизнес со мной, ты можешь получить эту систему в партнерском формате.</h3>
+            </article>
+            <div class="map-arrow">↓</div>
+            <article class="card map-wide">
+              <span class="badge">Сообщение 2</span>
+              <h3>Ты получаешь не просто автоворонку, а весь путь: что публиковать, как делать видео и как вести людей к следующему шагу.</h3>
+            </article>
+            <div class="map-arrow">↓</div>
+            <article class="card map-wide">
+              <span class="badge">Сообщение 3</span>
+              <h3>У тебя есть 2 варианта входа: бесплатно после Gold или сразу на старте за 19 500 ₽.</h3>
+            </article>
+            <div class="map-arrow">↓</div>
+            <article class="card map-wide">
+              <span class="badge">Квалификация</span>
+              <h3>3 коротких вопроса</h3>
+              <p>Ты уже в MLM или только рассматриваешь? Ведешь соцсети? Что важнее: партнеры, клиенты или система с нуля?</p>
+            </article>
+            <div class="map-arrow">↓</div>
+            <article class="card map-core">
+              <span class="badge badge-solid">Конверсия</span>
+              <h3>Оставить заявку / Записаться на разбор / Написать лично</h3>
+            </article>
+          </div>
+        </section>
+
+        <section class="section alt-section" id="buy-flow">
+          <div class="section-heading">
+            <p class="eyebrow">Ветка покупки</p>
+            <h2>Как выглядит путь внутри сценария “Хочу купить для своего бизнеса”</h2>
+          </div>
+
+          <div class="product-map">
+            <article class="card map-wide">
+              <span class="badge">Сообщение 1</span>
+              <h3>Если ты не хочешь идти в мою команду, можешь получить систему как самостоятельное решение для своего MLM-бизнеса.</h3>
+            </article>
+            <div class="map-arrow">↓</div>
+            <article class="card map-wide">
+              <span class="badge">Сообщение 2</span>
+              <h3>Ты получаешь целую систему: что публиковать, как создавать видео, как привлекать людей и как доводить их до решения.</h3>
+            </article>
+            <div class="map-arrow">↓</div>
+            <article class="card map-wide">
+              <span class="badge">Сообщение 3</span>
+              <h3>Внутри: автоворонка, нейровидео, 100 тем для рилс, логика прогрева и структура пути клиента.</h3>
+            </article>
+            <div class="map-arrow">↓</div>
+            <article class="card map-wide">
+              <span class="badge">Сообщение 4</span>
+              <h3>Стоимость самостоятельного пакета — 39 000 ₽. Есть формат с сопровождением за 99 000 ₽.</h3>
+            </article>
+            <div class="map-arrow">↓</div>
+            <article class="card map-core">
+              <span class="badge badge-solid">Конверсия</span>
+              <h3>Посмотреть состав / Купить / Оставить заявку / Задать вопрос</h3>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="followup">
+          <div class="section-heading">
+            <p class="eyebrow">Дожим</p>
+            <h2>Что происходит, если человек не принял решение сразу</h2>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="card dashboard-card">
+              <span class="badge">День 1</span>
+              <h3>Напоминание о системе</h3>
+              <p>Напомнить, что это не просто автоворонка, а готовая система для MLM через соцсети.</p>
+            </article>
+            <article class="card dashboard-card">
+              <span class="badge">День 2</span>
+              <h3>Усиление боли</h3>
+              <p>Если человек каждый раз думает, что снять, как привлечь и что писать дальше, ему нужна не идея, а система.</p>
+            </article>
+            <article class="card dashboard-card">
+              <span class="badge">День 3+</span>
+              <h3>Повторный выбор формата</h3>
+              <p>Либо партнерский старт, либо самостоятельная система, либо сопровождение, если хочется внедрить быстрее.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
