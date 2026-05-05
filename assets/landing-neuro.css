@@ -445,6 +445,43 @@ button {
   place-items: center;
 }
 
+.hero-blob,
+.pricing-blob {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(26px);
+  opacity: 0.72;
+  pointer-events: none;
+  z-index: 0;
+  animation: blobFloat 16s ease-in-out infinite;
+}
+
+.hero-blob-a {
+  width: 160px;
+  height: 160px;
+  top: 24px;
+  right: 18px;
+  background: radial-gradient(circle, rgba(255, 138, 0, 0.34), transparent 68%);
+}
+
+.hero-blob-b {
+  width: 180px;
+  height: 180px;
+  bottom: 48px;
+  left: 0;
+  background: radial-gradient(circle, rgba(123, 97, 255, 0.34), transparent 68%);
+  animation-duration: 21s;
+}
+
+.hero-blob-c {
+  width: 120px;
+  height: 120px;
+  top: 46%;
+  right: 36%;
+  background: radial-gradient(circle, rgba(0, 224, 255, 0.26), transparent 68%);
+  animation-duration: 19s;
+}
+
 .phone-frame {
   position: relative;
   width: min(100%, 340px);
@@ -632,7 +669,6 @@ button {
 .content-section,
 .contrast-section,
 .flow-section,
-.showcase-section,
 .faq-section,
 .pricing-section,
 .lead-section {
@@ -737,53 +773,50 @@ button {
   font-weight: 800;
 }
 
-.showcase-panel {
-  display: grid;
-  gap: 18px;
-  padding: 22px 20px;
-}
-
-.showcase-pills {
-  grid-template-columns: repeat(3, max-content);
-}
-
-.showcase-pills span {
-  display: inline-flex;
-  padding: 10px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
-  font-size: 0.8rem;
-  color: var(--text-soft);
-}
-
-.showcase-stack {
-  grid-template-columns: 1fr;
-}
-
-.micro-card-orange {
-  background: linear-gradient(135deg, rgba(255, 138, 0, 0.16), rgba(15, 23, 42, 0.74));
-}
-
-.micro-card-violet {
-  background: linear-gradient(135deg, rgba(123, 97, 255, 0.16), rgba(15, 23, 42, 0.74));
-}
-
-.micro-card-aqua {
-  background: linear-gradient(135deg, rgba(0, 201, 167, 0.16), rgba(15, 23, 42, 0.74));
-}
-
 .faq-grid {
   gap: 16px;
 }
 
+.pricing-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-blob-a {
+  width: 220px;
+  height: 220px;
+  top: 22px;
+  left: -36px;
+  background: radial-gradient(circle, rgba(255, 78, 205, 0.2), transparent 68%);
+}
+
+.pricing-blob-b {
+  width: 260px;
+  height: 260px;
+  right: -58px;
+  bottom: 10px;
+  background: radial-gradient(circle, rgba(0, 201, 167, 0.18), transparent 68%);
+  animation-duration: 22s;
+}
+
+.pricing-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .pricing-card h3 {
-  margin-top: 14px;
+  margin-top: 10px;
   font-size: clamp(1.5rem, 6vw, 2.2rem);
 }
 
 .pricing-subline {
-  margin-top: 8px;
+  margin-top: -2px;
 }
 
 .pricing-card-featured {
@@ -797,6 +830,16 @@ button {
 
 .pricing-badge {
   color: var(--text-soft);
+}
+
+.pricing-card ul {
+  flex: 1;
+  margin-bottom: 2px;
+}
+
+.pricing-card .cta-primary,
+.pricing-card .cta-secondary {
+  margin-top: 8px;
 }
 
 .lead-section {
@@ -867,6 +910,16 @@ button {
   }
 }
 
+@keyframes blobFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(16px, -22px, 0) scale(1.08);
+  }
+}
+
 @media (min-width: 760px) {
   .landing-shell {
     width: min(calc(100% - 40px), var(--max-width));
@@ -895,14 +948,8 @@ button {
   }
 
   .signal-strip,
-  .showcase-panel,
   .lead-section {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .showcase-stack {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-content: end;
   }
 }
 
