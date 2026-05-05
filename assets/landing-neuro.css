@@ -353,8 +353,14 @@ button {
   max-width: 44ch;
 }
 
+.hero-tags {
+  margin-top: 8px;
+}
+
 .soft-chip {
   justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .cta-stack {
@@ -694,6 +700,14 @@ button {
   padding: 22px 20px;
   position: relative;
   overflow: hidden;
+}
+
+.module-card h3 {
+  margin-top: 8px;
+}
+
+.module-card p {
+  margin-top: 10px;
 }
 
 .module-grid,
